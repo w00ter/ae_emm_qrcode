@@ -1,0 +1,61 @@
+{
+  "Samsung Knox Manage": {
+    "defaults": {
+      "android.app.extra.PROVISIONING_DEVICE_ADMIN_COMPONENT_NAME": "com.sds.emm.cloud.knox.samsung/com.sds.emm.emmagent.core.event.receiver.DeviceAdminPolicyReceiver",
+      "android.app.extra.PROVISIONING_DEVICE_ADMIN_PACKAGE_DOWNLOAD_LOCATION": "https://play.google.com/managed/downloadManagingApp?identifier=knoxmanage",
+      "android.app.extra.PROVISIONING_DEVICE_ADMIN_SIGNATURE_CHECKSUM": "MzDUGUat9VKJ1Xv8FBmP2rts6f-5K4RFLVPmxXw6gpY=",
+      "android.app.extra.PROVISIONING_ADMIN_EXTRAS_BUNDLE": {
+        "serverUrl": "https://[server].manage.samsungknox.com/emm",
+        "tenantId": "your-tenant-id",
+        "AllowModifyUserId": "Allow",
+        "Method": "QR",
+        "Mode": "DO",
+        "UserID": "your user",
+        "Password": "Your password"
+      }
+    }
+  },
+  "Microsoft Intune": {
+    "defaults": {
+      "android.app.extra.PROVISIONING_DEVICE_ADMIN_COMPONENT_NAME": "com.google.android.apps.work.clouddpc/.receivers.CloudDeviceAdminReceiver",
+      "android.app.extra.PROVISIONING_DEVICE_ADMIN_PACKAGE_DOWNLOAD_LOCATION": "https://play.google.com/managed/downloadManagingApp?identifier=setup",
+      "android.app.extra.PROVISIONING_DEVICE_ADMIN_SIGNATURE_CHECKSUM": "I5YvS0O5hXY46mb01BlRjq4oJJGs2kuUcHvVkAPEXlg",
+      "android.app.extra.PROVISIONING_ADMIN_EXTRAS_BUNDLE": {
+        "com.google.android.apps.work.clouddpc.EXTRA_ENROLLMENT_TOKEN": ""
+      }
+    }
+  },
+  "Omnissa Workspace ONE": {
+    "defaults": {
+      "android.app.extra.PROVISIONING_DEVICE_ADMIN_COMPONENT_NAME": "com.airwatch.androidagent/com.airwatch.agent.DeviceAdministratorReceiver",
+      "android.app.extra.PROVISIONING_DEVICE_ADMIN_PACKAGE_DOWNLOAD_LOCATION": "https://play.google.com/managed/downloadManagingApp?identifier=hub",
+      "android.app.extra.PROVISIONING_DEVICE_ADMIN_SIGNATURE_CHECKSUM": "6kyqxDOjgS30jvQuzh4uvHPk-0bmAD-1QU7vtW7i_o8=",
+      "android.app.extra.PROVISIONING_ADMIN_EXTRAS_BUNDLE": {
+        "serverurl": "",
+        "gid": "",
+        "un": "",
+        "pw": ""
+      }
+    }
+  },
+  "SOTI Mobi Control": {
+    "defaults": {
+      "android.app.extra.PROVISIONING_DEVICE_ADMIN_COMPONENT_NAME": "net.soti.mobicontrol.androidwork/net.soti.mobicontrol.admin.DeviceAdminAdapte",
+      "android.app.extra.PROVISIONING_DEVICE_ADMIN_PACKAGE_DOWNLOAD_LOCATION": "http://soti.net/apk/ae2",
+      "android.app.extra.PROVISIONING_DEVICE_ADMIN_SIGNATURE_CHECKSUM": "hn8mSNJMPcovWbnnWrb-uMpWZjNlNp-jyV_2A-Whumc=",
+      "android.app.extra.PROVISIONING_ADMIN_EXTRAS_BUNDLE": {
+        "enrollmentId": ""
+      }
+	  "android.app.extra.PROVISIONING_SKIP_ENCRYPTION":true,
+	  "android.app.extra.PROVISIONING_ALLOW_OFFLINE":true,
+	  "android.app.extra.PROVISIONING_LEAVE_ALL_SYSTEM_APPS_ENABLED":"true",
+    }
+  },
+  "TestDPC": {
+    "defaults": {
+      "android.app.extra.PROVISIONING_DEVICE_ADMIN_COMPONENT_NAME": "com.afwsamples.testdpc/com.afwsamples.testdpc.DeviceAdminReceiver",
+      "android.app.extra.PROVISIONING_DEVICE_ADMIN_PACKAGE_DOWNLOAD_LOCATION": "https://testdpc-latest-apk.appspot.com",
+      "android.app.extra.PROVISIONING_DEVICE_ADMIN_SIGNATURE_CHECKSUM": "gJD2YwtOiWJHkSMkkIfLRlj-quNqG1fb6v100QmzM9w="
+    }
+  }
+}
